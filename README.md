@@ -2,7 +2,7 @@
 
 **Module:** QC803 – Quantum Computing  
 **Project:** Variational Quantum Eigensolver (VQE) – Molecular Energy Curves  
-**Student(s):** Conor [Surname]  
+**Student:** Connor Seckerson
 **Date:** January 2026
 
 ---
