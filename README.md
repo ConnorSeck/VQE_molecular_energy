@@ -27,7 +27,7 @@ The goals are:
 - **Hamiltonian generation:** Qiskit Nature + PySCF
 - **Reference energies:** Exact diagonalization
 - **VQE ansatz:** Parameterized RX/RZ layers with entanglement
-- **Optimizers:** COBYLA, SPSA, SLSQP
+- **Optimizers:** COBYLA, SPSA, 
 - **Noise models:** Depolarizing and readout error
 - **Backend:** Qiskit Aer (statevector and shot-based)
 
