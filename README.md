@@ -1,44 +1,35 @@
-# VQE for Molecular Ground-State Energies
+# VQE Molecular Energy
 
-**Module:** QC803 – Quantum Computing  
-**Project:** Variational Quantum Eigensolver (VQE) – Molecular Energy Curves  
-**Student:** Connor Seckerson
-**Date:** January 2026
+This repository contains a study of molecular ground-state energies
+using the Variational Quantum Eigensolver (VQE) implemented with
+Qiskit and Qiskit Nature.
 
----
+The project focuses on small molecular systems and includes
+exact diagonalization benchmarks as well as noisy simulations.
 
-## 📖 Project Overview
+## Project Structure
 
-This project implements the Variational Quantum Eigensolver (VQE) to compute
-ground-state energy curves of small molecules as a function of bond length.
-We focus primarily on the hydrogen molecule (H₂) in the STO-3G basis.
+- `src/vqe_molecular_energy/`  
+  Core reusable code for molecular Hamiltonians and exact solvers.
 
-The goals are:
-- Compute reference (exact) ground-state energies classically
-- Implement VQE with different ansätze and depths
-- Compare classical optimizers
-- Analyze convergence, variance, and noise effects
-- Estimate equilibrium bond length and energy
+- `notebooks/`  
+  Jupyter notebooks containing numerical experiments and analysis.
 
----
+- `tests/`  
+  Basic unit tests for core functionality.
 
-## 🧪 Methods
+## Methods
 
-- **Hamiltonian generation:** Qiskit Nature + PySCF
-- **Reference energies:** Exact diagonalization
-- **VQE ansatz:** Parameterized RX/RZ layers with entanglement
-- **Optimizers:** COBYLA, SPSA, 
-- **Noise models:** Depolarizing and readout error
-- **Backend:** Qiskit Aer (statevector and shot-based)
+- Second-quantized molecular Hamiltonians (Qiskit Nature)
+- Jordan–Wigner fermion-to-qubit mapping
+- Exact diagonalization (dense and sparse)
+- Variational Quantum Eigensolver (VQE)
+- Noise models using Qiskit Aer
 
----
+## Installation
 
-## 📂 Repository Structure
+Create a virtual environment and install the project:
 
-```text
-src/            Core Python modules
-notebooks/      Jupyter notebooks for experiments
-data/           Reference and VQE-generated data
-results/        Figures and tables used in the report
-environment/    Environment setup files
-report/         Final PDF report
+```bash
+pip install -e .
+
